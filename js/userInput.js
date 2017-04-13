@@ -12,6 +12,7 @@ $("form").submit(function(event){
 });
 
 });
+
 function processResult(json)	{
     var str = '';
     var j = 0;
