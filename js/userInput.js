@@ -19,8 +19,10 @@ function processResult(json)	{
     $("#comment").val("");
     $("#email").val("");
     $("#list").html("");
+
     $.each(json, function (i,e) {
-        if (typeof(e.message) != 'undefined') {
+
+        if ( typeof(e.message) == 'string' ) {
             $('#message').html(e.message);
         } else {
             if (j % 3 == 0) $("#list").append('<div class = "col-sm-1"></div>');
