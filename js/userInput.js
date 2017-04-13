@@ -1,15 +1,15 @@
 $(document).ready(function(){
 
-$("form").submit(function(event){
-    var name = $("#name").val();
-    var comment = $("#comment").val();
-    var email = $("#email").val();
-    event.preventDefault();
-    $.getJSON('php/InsertSelect.php',
-        { name : name, comment : comment, email : email },
-        processResult
-    );
-});
+    $("form").submit(function(event){
+        var name = $("#name").val();
+        var comment = $("#comment").val();
+        var email = $("#email").val();
+        event.preventDefault();
+        $.getJSON('php/InsertSelect.php',
+            { name : name, comment : comment, email : email },
+            processResult
+        );
+    });
 
 });
 
