@@ -10,7 +10,8 @@ function dbLink(){
         return $link;
 
     } catch (PDOException $e) {
-        echo "Connection error: " . $e->getMessage();
+        $message[] = ['message' => "Connection error: " . $e->getMessage()];
+        echo json_encode($message);
         die;
     }
 }
@@ -25,7 +26,8 @@ function Select($sql,$link){
         return $rows;
     }
     catch (PDOException $e){
-        echo "Select error: " . $e -> getMessage();
+        $message[] = ['message' => "Select error: " . $e -> getMessage()];
+        echo json_encode($message);
         die;
     }
 }
@@ -53,7 +55,8 @@ function Insert($table, $object, $link){
         return $link -> lastInsertId();
     }
     catch (PDOException $e){
-        echo "Insert error: " . $e -> getMessage();
+        $message[] = ['message' => "Insert error: " . $e -> getMessage()];
+        echo json_encode($message);
         die;
     }
 }
