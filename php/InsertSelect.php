@@ -6,7 +6,7 @@ $comment = $_GET['comment'];
 $email = $_GET['email'];
 
 $link=dbLink();
-if (!$name == "")
+if ( $name != "" )
 Insert(TABLE,['name' => $name,'comment' => $comment,'email' => $email],$link);
 $sql="SELECT * FROM ". TABLE ." ORDER BY id DESC";
 $comment_list=Select($sql,$link);
