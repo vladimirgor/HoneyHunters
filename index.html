@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <script language="javascript" src="js/jquery-1.11.3.js"></script>
+    <script language="javascript" src="js/bootstrap.min.js"></script>
+    <script language="javascript" src="js/userInput.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>HoneyHunters</title>
+</head>
+
+<body>
+<div class="container">
+    <div class="row header">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-11">
+            <a href="#"><img  src="http://honey-hunters.ru/public/img/logo_50.png" >
+                <span class="hhs">HoneyHunters</span></a>
+        </div>
+    </div>
+    <div class="row envelope">
+
+        <div class="circle">
+            <div class="inside">
+                <a href="#">
+                    <i class="fa fa-envelope-o post"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <form>
+        <div class="row form" id="write">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3">
+                Имя <span class="star">&#9733</span><br>
+                <input type="text"  required autofocus pattern="^[А-Яа-яЁёA-Za-z]+$"  id="name">
+            </div>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-3">
+                Комментарий <span class="star">&#9733</span><br>
+                <input type="text"   required pattern="^[А-Яа-яЁёA-Za-z,.\s]+$" id="comment">
+            </div>
+        </div>
+        <div class="row form">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3">
+                E-Mail <span class="star">&#9733</span><br>
+                <input type="email"  required id="email">
+            </div>
+        </div>
+        <div class="row insert">
+            <div class="col-sm-9"></div>
+            <div class="col-sm-2">
+                <button  type="submit" id="save">Записать</button>
+            </div>
+        </div>
+    </form>
+    <h3 class = "output_comments">Выводим комментарии</h3>
+    <div class="row comments" id="list">
+
+    </div>
+    <div class="row footer">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-9">
+            <a href="#"><img  src="http://honey-hunters.ru/public/img/logo_50.png" >
+                <span class="hhs">HoneyHunters</span></a>
+        </div>
+        <div class="col-sm-1 social">
+            <a href="#">
+                <i class="fa fa-vk"></i></a>
+            <a href="#">
+                <i class="fa fa-facebook"></i></a>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+</div>
+</body>
+</html>
