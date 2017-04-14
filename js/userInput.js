@@ -4,9 +4,10 @@ $(document).ready(function(){
         var name = $("#name").val();
         var comment = $("#comment").val();
         var email = $("#email").val();
+        var session = $("#session").val();
         event.preventDefault();
-        $.getJSON('php/InsertSelect.php',
-            { name : name, comment : comment, email : email },
+        $.getJSON('../php/InsertSelect.php',
+            { name : name, comment : comment, email : email, session : session },
             processResult
         );
     });
