@@ -38,11 +38,11 @@ session_start();
         <div class="row form" id="write">
             <div class="col-sm-3 col-sm-offset-1">
                 Имя <span class="star">&#9733</span><br>
-                <input type="text"  required autofocus pattern="^[А-Яа-яЁёA-Za-z]+$"  id="name">
+                <input type="text"  required autofocus pattern="^[А-ЯЁA-Z]+[А-Яа-яЁёA-Za-z\s]+$"  id="name">
             </div>
             <div class="col-sm-3 col-sm-offset-2">
                 Комментарий <span class="star">&#9733</span><br>
-                <input type="text"   required pattern="^[А-Яа-яЁёA-Za-z,.\s]+$" id="comment">
+                <input type="text"   required pattern="^[А-ЯЁA-Z]+[А-Яа-яЁёA-Za-z!\-,.\s]+$" id="comment">
             </div>
         </div>
         <div class="row form">
