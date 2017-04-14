@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head lang="en">
@@ -48,6 +51,7 @@
                 <input type="email"  required id="email">
             </div>
         </div>
+        <input hidden type="text"  id="session" value ="<?=session_id()?>">
         <div class="row insert">
             <div class="col-sm-2 col-sm-offset-9">
                 <button  type="submit" id="save">Записать</button>
