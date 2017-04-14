@@ -6,7 +6,7 @@ $(document).ready(function(){
         var email = $("#email").val();
         var session = $("#session").val();
         event.preventDefault();
-        $.getJSON('php/InsertSelect.php',
+        $.getJSON('../php/InsertSelect.php',
             { name : name, comment : comment, email : email, session : session },
             processResult
         );
