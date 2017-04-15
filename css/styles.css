@@ -100,6 +100,7 @@ a:hover, a:link, a:active {
 .c1, .nc1  {
     color:#fff;
     font-size:1.2em;
+    padding:0.5em 0;
 }
 .c1 {
     background-color:#122b40;
@@ -120,5 +121,6 @@ a:hover, a:link, a:active {
 
 .c3, .nc3  {
     font-size:0.9em;
-    height: 3em;
+    height: 10em;
+    padding:0 3em;
 }
