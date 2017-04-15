@@ -2,10 +2,10 @@
 session_start();
 include_once('config.php');
 require_once('functions.php');
-$name = $_GET['name'];
-$comment = $_GET['comment'];
-$email = $_GET['email'];
-$session = $_GET['session'];
+$name = htmlspecialchars($_GET['name'],ENT_QUOTES);
+$comment = htmlspecialchars($_GET['comment'],ENT_QUOTES);
+$email = htmlspecialchars($_GET['email'],ENT_QUOTES);
+$session = htmlspecialchars($_GET['session'],ENT_QUOTES);
 if ( $session != session_id() ) {
     $message[] = ['message' => "Возможно предпринята XSS атака." ];
     echo json_encode($message);
