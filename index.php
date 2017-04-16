@@ -18,7 +18,7 @@ session_start();
 <body>
 <div class="container">
     <div class="row header">
-        <div class="col-sm-11 col-sm-offset-1">
+        <div class="company col-sm-3 col-sm-offset-1">
             <a href="#"><img  src="http://honey-hunters.ru/public/img/logo_50.png"
                               alt="logo">
                 <span class="hhs">HoneyHunters</span></a>
@@ -64,11 +64,11 @@ session_start();
     <div class="row comments" id="list">
     </div>
     <div class="row footer">
-        <div class="col-sm-9 col-sm-offset-1">
+        <div class="company col-sm-3 col-sm-offset-1">
             <a href="#"><img  src="http://honey-hunters.ru/public/img/logo_50.png" >
                 <span class="hhs">HoneyHunters</span></a>
         </div>
-        <div class="col-sm-1 social">
+        <div class="col-sm-1 social col-sm-offset-6">
             <a href="#">
                 <i class="fa fa-vk"></i></a>
             <a href="#">
