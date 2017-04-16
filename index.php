@@ -28,7 +28,7 @@ session_start();
         <div class="circle">
             <div class="inside">
                 <a href="#">
-                    <i class="fa fa-envelope-o post"></i>
+                    <img class = "env-img" src="/image/envelop.png">
                 </a>
             </div>
         </div>
