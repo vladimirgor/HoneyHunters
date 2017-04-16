@@ -5,6 +5,10 @@
 .header   {
     padding-top:2em;
 }
+.company {
+    border-radius: 0.31em;
+    transition-duration: 0.5s;
+}
 .footer   {
     padding:2em 0 2em 0;
 }
@@ -33,12 +37,16 @@ input:invalid {
     color:#fff;
     font-size:1.7em;
     border:none;
-    border-radius: 3%;
+    border-radius: 0.31em;
     padding : 0.5em 1em;
+    transition-duration: 0.5s;
 
 }
-#save:hover, .circle:hover, .footer i:hover, .company:hover {
-    box-shadow:0 0 20px 4px #6477ad inset;
+#save:hover, .circle:hover, .company:hover {
+    box-shadow:0 0 1.25em 0.25em #6477ad inset;
+}
+.footer i:hover {
+    box-shadow:0 0 0.3em 0.1em #6477ad inset;
 }
 .hhs {
     color:#fff;
@@ -57,6 +65,7 @@ a:hover, a:link, a:active {
     background-color:#2f3237;
     border-radius:50%;
     margin-top: 0.8em;
+    transition-duration: 0.5s;
 
 }
 
@@ -72,6 +81,7 @@ a:hover, a:link, a:active {
     width:11em;
     margin: auto;
     vertical-align: middle;
+    transition-duration: 0.5s;
 }
  .env-img {
      width:60%;
