@@ -29,7 +29,7 @@ session_start();
         <div class="circle">
             <div class="inside">
                 <a href="#">
-                    <img class = "env-img" src="/image/envelop1.png" alt="envelope">
+                    <img class = "env-img" src="/image/envelop.png" alt="envelope">
                 </a>
             </div>
         </div>
@@ -59,10 +59,9 @@ session_start();
             </div>
         </div>
     </form>
-    <p id = "message"></p>
-    <h3 class = "output_comments">Выводим комментарии</h3>
-    <div class="row comments" id="list">
 
+    <div id="message" class = "row output_comments comments">Выводим комментарии</div>
+    <div class="row comments" id="list">
     </div>
     <div class="row footer">
         <div class="col-sm-9 col-sm-offset-1">
