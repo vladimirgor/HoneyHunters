@@ -1,12 +1,12 @@
 .header,.form,.footer, .envelope, input, .insert  {
-    background-color:#000;
+    background-color:#2d3035;
     border:none;
 }
 .header   {
-    padding-top:3em;
+    padding-top:2em;
 }
 .footer   {
-    padding:3em 0 3em 0;
+    padding:2em 0 2em 0;
 }
 input:focus{
     border-style:hidden;
@@ -20,7 +20,7 @@ input:invalid {
     box-shadow: none;
 }
 .form {
-    color:#999;
+    color:#d6d8d7;
     font-size:1.7em;
     padding-top:1em;
 }
@@ -29,7 +29,7 @@ input:invalid {
     padding-bottom:3em;
 }
 #save {
-    background-color: #D91A39;
+    background-color: #be393c;
     color:#fff;
     font-size:1.7em;
     border:none;
@@ -50,8 +50,8 @@ a:hover, a:link, a:active {
     text-align:center;
     height:2em;
     width:2em;
-    color:#777;
-    background-color:#444;
+    color:#656565;
+    background-color:#2f3237;
     border-radius:50%;
     margin-top: 0.8em;
 
@@ -61,29 +61,32 @@ a:hover, a:link, a:active {
 }
 .circle {
     border-radius: 50%;
-    border:1.2em #444 solid;
-    background-color: #D91A39;
+    border:1.2em #393939 solid;
+    background-color: #be393c;
     height:11em;
     width:11em;
     margin: auto;
     vertical-align: middle;
 }
-.inside a{
-    font-size: 7em;
-    color:#FFB8B3;
-    margin-left: 0.12em;
+ .env-img {
+
+    width:60%;
+     margin-left:1.7em;
+     margin-top:2.5em;
+     border-radius:10%;
 }
-.inside {
-   margin-top: -0.8em;
-}
+
+
 .star {
-    color:#D91A39 ;
+    color:#be393c ;
 }
 .output_comments {
-    padding-top:2em;
-    padding-bottom:2em;
+    padding:2em 0;
     text-align: center;
     font-size: 2em;
+}
+.comments {
+    background-color: #f5f6f2;
 }
 .ticketc,.ticketnc {
     text-align: center;
@@ -92,10 +95,10 @@ a:hover, a:link, a:active {
     padding:0;
 }
 .ticketnc {
-    background-color:#66afe9;
+    background-color:#ddebde;
 }
 .ticketc {
-    background-color:#5cb85c;
+    background-color:#e9eef2;
 }
 .c1, .nc1  {
     color:#fff;
@@ -103,20 +106,23 @@ a:hover, a:link, a:active {
     padding:0.5em 0;
 }
 .c1 {
-    background-color:#122b40;
+    background-color:#4a596c;
 }
 .nc1 {
-    background-color:#34580F;
+    background-color:#58ad52;
 }
 .c2, .nc2  {
     font-size:1.1em;
     font-weight: bold;
 }
-.c2,.c3 {
-    color: #122b40;
+.c2 {
+    color: #6c737b;
 }
-.nc2, .nc3 {
-    color: #34580F;
+.c3,.nc3{
+    color: #767682;
+}
+.nc2 {
+    color: #58ad52;
 }
 
 .c3, .nc3  {

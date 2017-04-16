@@ -19,7 +19,8 @@ session_start();
 <div class="container">
     <div class="row header">
         <div class="col-sm-11 col-sm-offset-1">
-            <a href="#"><img  src="http://honey-hunters.ru/public/img/logo_50.png" >
+            <a href="#"><img  src="http://honey-hunters.ru/public/img/logo_50.png"
+                              alt="logo">
                 <span class="hhs">HoneyHunters</span></a>
         </div>
     </div>
@@ -28,7 +29,7 @@ session_start();
         <div class="circle">
             <div class="inside">
                 <a href="#">
-                    <i class="fa fa-envelope-o post"></i>
+                    <img class = "env-img" src="/image/envelop.png" alt="envelope">
                 </a>
             </div>
         </div>
@@ -58,10 +59,9 @@ session_start();
             </div>
         </div>
     </form>
-    <p id = "message"></p>
-    <h3 class = "output_comments">Выводим комментарии</h3>
-    <div class="row comments" id="list">
 
+    <div id="message" class = "row output_comments comments">Выводим комментарии</div>
+    <div class="row comments" id="list">
     </div>
     <div class="row footer">
         <div class="col-sm-9 col-sm-offset-1">
