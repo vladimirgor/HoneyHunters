@@ -7,7 +7,7 @@ $(document).ready(function(){
                 event.preventDefault();}
         else {
             var comment = $("#comment").val();
-            if (/^[A-ZА-ЯЁ][А-Яа-яЁёA-Za-z!\-,.\s\"]+$/.test(comment) != true )
+            if (/^[A-ZА-ЯЁ][А-Яа-яЁёA-Za-z!\-,.\s"]+$/.test(comment) != true )
                 {alert('Введите, пожалуйста, комментарий правильно.');
                     event.preventDefault();}
             else {
