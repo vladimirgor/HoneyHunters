@@ -19,7 +19,8 @@ session_start();
 <div class="container">
     <div class="row header">
         <div class="col-sm-11 col-sm-offset-1">
-            <a href="#"><img  src="http://honey-hunters.ru/public/img/logo_50.png" >
+            <a href="#"><img  src="http://honey-hunters.ru/public/img/logo_50.png"
+                              alt="logo">
                 <span class="hhs">HoneyHunters</span></a>
         </div>
     </div>
@@ -28,7 +29,7 @@ session_start();
         <div class="circle">
             <div class="inside">
                 <a href="#">
-                    <img class = "env-img" src="/image/envelop.png">
+                    <img class = "env-img" src="/image/envelop1.png" alt="envelope">
                 </a>
             </div>
         </div>
