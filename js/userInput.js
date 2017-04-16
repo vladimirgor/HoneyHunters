@@ -5,7 +5,6 @@ $(document).ready(function(){
         var comment = $("#comment").val();
         var email = $("#email").val();
         var session = $("#session").val();
-        $("#message").val("");
         event.preventDefault();                   /*  page reload avoiding */
         $.getJSON('../php/InsertSelect.php',      /*  ajax request sending */
             { name : name, comment : comment, email : email, session : session },
@@ -24,6 +23,8 @@ function processResult(json)	{
     $("#email").val("");
 /* cards html cleaning */
     $("#list").html("");
+/* message html cleaning */
+    $("#message").html("");
 
     $.each(json, function (i,e) {
 

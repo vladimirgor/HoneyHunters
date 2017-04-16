@@ -49,7 +49,7 @@ session_start();
         <div class="row form">
             <div class="col-sm-3 col-sm-offset-1">
                 E-Mail <span class="star">&#9733;</span><br>
-                <input type="email"  required id="email">
+                <input type="email" required id="email">
             </div>
         </div>
         <input hidden type="text"  id="session" value ="<?=session_id()?>">
