@@ -60,7 +60,8 @@ session_start();
         </div>
     </form>
 
-    <div id="message" class = "row output_comments comments">Выводим комментарии</div>
+    <div class = "row output_comments comments">Выводим комментарии</div>
+    <div id="message" class = "row comments"></div>
     <div class="row comments" id="list">
     </div>
     <div class="row footer">
