@@ -5,6 +5,7 @@ $(document).ready(function(){
         var comment = $("#comment").val();
         var email = $("#email").val();
         var session = $("#session").val();
+        $("#message").val("");
         event.preventDefault();                   /*  page reload avoiding */
         $.getJSON('../php/InsertSelect.php',      /*  ajax request sending */
             { name : name, comment : comment, email : email, session : session },
