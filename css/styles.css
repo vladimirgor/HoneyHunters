@@ -37,6 +37,9 @@ input:invalid {
     padding : 0.5em 1em;
 
 }
+#save:hover, .circle:hover {
+    box-shadow:0 0 20px 4px #6477ad inset;
+}
 .hhs {
     color:#fff;
     font-size:1.7em;
@@ -68,6 +71,7 @@ a:hover, a:link, a:active {
     margin: auto;
     vertical-align: middle;
 }
+.circle:hover {}
  .env-img {
 
     width:60%;
