@@ -37,7 +37,7 @@ input:invalid {
     padding : 0.5em 1em;
 
 }
-#save:hover, .circle:hover {
+#save:hover, .circle:hover, .footer i:hover, .company:hover {
     box-shadow:0 0 20px 4px #6477ad inset;
 }
 .hhs {
@@ -59,9 +59,11 @@ a:hover, a:link, a:active {
     margin-top: 0.8em;
 
 }
+
 .social {
     padding:0;
 }
+
 .circle {
     border-radius: 50%;
     border:1.2em #393939 solid;
@@ -71,14 +73,12 @@ a:hover, a:link, a:active {
     margin: auto;
     vertical-align: middle;
 }
-.circle:hover {}
  .env-img {
-
-    width:60%;
+     width:60%;
      margin-left:1.7em;
      margin-top:2.5em;
      border-radius:10%;
-}
+    }
 
 
 .star {
