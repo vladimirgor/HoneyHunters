@@ -3,10 +3,10 @@
     border:none;
 }
 .header   {
-    padding-top:3em;
+    padding-top:2em;
 }
 .footer   {
-    padding:3em 0 3em 0;
+    padding:2em 0 2em 0;
 }
 input:focus{
     border-style:hidden;
@@ -68,14 +68,15 @@ a:hover, a:link, a:active {
     margin: auto;
     vertical-align: middle;
 }
-.inside a{
-    font-size: 7em;
-    color:#FFB8B3;
-    margin-left: 0.12em;
+ .env-img {
+
+    width:80%;
+     margin-left:0.9em;
+     margin-top:1.62em;
+     border-radius:1%;
 }
-.inside {
-   margin-top: -0.8em;
-}
+
+
 .star {
     color:#D91A39 ;
 }
