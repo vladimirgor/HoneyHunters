@@ -39,17 +39,17 @@ session_start();
         <div class="row form" id="write">
             <div class="col-sm-3 col-sm-offset-1">
                 Имя <span class="star">&#9733;</span><br>
-                <input type="text"  required  autofocus pattern="^[A-ZА-ЯЁ][А-Яа-яЁёA-Za-z\s]+$"  id="name">
+                <input type="text" autofocus required pattern="^[A-ZА-ЯЁ][А-Яа-яЁёA-Za-z\s]+$" id="name">
             </div>
             <div class="col-sm-3 col-sm-offset-2">
                 Комментарий <span class="star">&#9733;</span><br>
-                <input type="text"   required pattern="^[A-ZА-ЯЁ][А-Яа-яЁёA-Za-z!\-,.\s&#34;]+$"  id="comment">
+                <input type="text" required   pattern="^[A-ZА-ЯЁ][А-Яа-яЁёA-Za-z!\-,.\s&#34;]+$" id="comment">
             </div>
         </div>
         <div class="row form">
             <div class="col-sm-3 col-sm-offset-1">
                 E-Mail <span class="star">&#9733;</span><br>
-                <input type="email"  required id="email">
+                <input type="email" required id="email">
             </div>
         </div>
         <input hidden type="text"  id="session" value ="<?=session_id()?>">
@@ -59,14 +59,14 @@ session_start();
             </div>
         </div>
     </form>
-
-    <div class = "row output_comments comments">Выводим комментарии</div>
     <div id="message" class = "row comments"></div>
+    <div class = "row output_comments comments">Выводим комментарии</div>
     <div class="row comments" id="list">
     </div>
     <div class="row footer">
         <div class="company col-sm-3 col-sm-offset-1">
-            <a href="#"><img  src="http://honey-hunters.ru/public/img/logo_50.png" >
+            <a href="#"><img  src="http://honey-hunters.ru/public/img/logo_50.png"
+                              alt="logo">
                 <span class="hhs">HoneyHunters</span></a>
         </div>
         <div class="col-sm-1 social col-sm-offset-6">
