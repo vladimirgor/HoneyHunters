@@ -83,6 +83,8 @@ a:hover, a:link, a:active {
     margin: auto;
     vertical-align: middle;
     transition-duration: 0.5s;
+    background:url('/image/shadow.png'),#be393c;
+    background-size: cover;
 }
  .env-img {
      width:60%;
