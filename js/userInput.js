@@ -3,7 +3,7 @@ $(document).ready(function(){
     $("form").submit(function(event){
         var name = $("#name").val();
         if (/^[A-ZА-ЯЁ][А-Яа-яЁёA-Za-z\s]+$/.test(name) != true )
-            {alert('Введите, пожалуйста, имя равильно.');
+            {alert('Введите, пожалуйста, имя правильно.');
                 event.preventDefault();}
         else {
             var comment = $("#comment").val();
