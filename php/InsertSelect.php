@@ -9,7 +9,7 @@ if ($p === 0) {
     die;
 } else {
     $name = htmlspecialchars($_GET['name'], ENT_QUOTES);
-    $p = preg_match('~^[A-ZА-ЯЁ][А-Яа-яЁёA-Za-z!\-,.\s"]+$~', $_GET['comment']);
+    $p = preg_match('~^[A-ZА-ЯЁ][А-Яа-яЁёA-Za-z!\-,.\s"]+$~u', $_GET['comment']);
     if ($p === 0) {
         $message[] = ['message' => "Введите, пожалуйста, комментарий правильно ."];
         echo json_encode($message);
