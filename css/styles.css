@@ -41,7 +41,7 @@ input:invalid {
     border-radius: 0.31em;
     padding : 0.5em 1em;
     transition-duration: 0.5s;
-
+    outline:none;
 }
 #save:hover, .circle:hover, .company:hover {
     box-shadow:0 0 1.25em 0.25em #6477ad inset;
