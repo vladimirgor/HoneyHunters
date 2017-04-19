@@ -2,7 +2,7 @@
 session_start();
 include_once('config.php');
 require_once('functions.php');
-$p = preg_match('~^[A-ZА-ЯЁ][А-Яа-яЁёA-Za-z\s]+$~', $_GET['name']);
+$p = preg_match('~^[A-ZА-ЯЁ][А-Яа-яЁёA-Za-z\s]+$~u', $_GET['name']);
 if ($p === 0) {
     $message[] = ['message' => "Введите, пожалуйста, имя правильно ." ];
     echo json_encode($message);
