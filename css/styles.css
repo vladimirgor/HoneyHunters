@@ -104,45 +104,44 @@ a:hover, a:link, a:active {
 .comments {
     background-color: #f5f6f2;
 }
-.ticketc,.ticketnc {
+[class~="ticket"] {
     text-align: center;
     margin-bottom: 2.8em;
     margin-right: 2.8em;
     padding:0;
 }
-.ticketnc {
+[class~="ticket"]:nth-child(odd) {
     background-color:#ddebde;
 }
-.ticketc {
+[class~="ticket"]:nth-child(even) {
     background-color:#e9eef2;
 }
-.c1, .nc1  {
+[class~="ticket"] p.str1  {
     color:#fff;
     font-size:1.2em;
     padding:0.5em 0;
 }
-.c1 {
+[class~="ticket"]:nth-child(odd) p.str1 {
     background-color:#4a596c;
 }
-.nc1 {
+[class~="ticket"]:nth-child(even) p.str1 {
     background-color:#58ad52;
 }
-.c2, .nc2  {
+[class~="ticket"] p.str2  {
     font-size:1.1em;
     font-weight: bold;
 }
-.c2 {
+[class~="ticket"]:nth-child(odd) p.str2 {
     color: #6c737b;
 }
-.c3,.nc3{
-    color: #767682;
-}
-.nc2 {
+
+[class~="ticket"]:nth-child(even) p.str2 {
     color: #58ad52;
 }
 
-.c3, .nc3  {
+[class~="ticket"] p.str3  {
     font-size:0.9em;
     height: 10em;
-    padding:0 3em;
+    padding:0 2em;
+    color: #767682;
 }

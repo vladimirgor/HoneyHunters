@@ -31,8 +31,7 @@ $(document).ready(function(){
 });
 /*  ajax response processing  */
 function processResult(json)	{
-    var str = '';
-    var j = 0;
+    var offset = "";
  /* input fields value cleaning
     $("#name").val("");
     $("#comment").val("");
@@ -48,16 +47,14 @@ function processResult(json)	{
 /* message rendering */
             $('#message').html(e.message);
         } else {
-/* cards  html forming */
-            if (j % 3 == 0) $("#list").append('<div class = "col-sm-1"></div>');
-            j++;
-            if (i % 2 == 0) str = 'c'; /* even card class */
-            else str = 'nc';           /* odd  card class */
+            /* cards  html forming */
+            if ( i % 3 == 0 ) offset = " col-sm-offset-1 ";
+            else offset = "";
             $("#list").append(
-                '<div class="col-sm-3 ticket' + str + '">' +
-                '<p class="' + str + '1' + '">' + e.name + '</p>' +
-                '<p class="' + str + '2' + '">' + e.email + '</p>' +
-                '<p class="' + str + '3' + '">' + e.comment + '</p>' +
+                '<div class="col-sm-3 ticket' + offset + '">' +
+                '<p class="str1">' + e.name + '</p>' +
+                '<p class="str2">' + e.email + '</p>' +
+                '<p class="str3">' + e.comment + '</p>' +
                 '</div>');
         }
     });
