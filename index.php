@@ -76,6 +76,7 @@ session_start();
                 <i class="fa fa-facebook"></i></a>
         </div>
     </div>
+    <div>&copy;&nbsp;Vladimir&nbsp;Goryainov&nbsp;2017</div>
 </div>
 </body>
 </html>
