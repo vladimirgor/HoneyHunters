@@ -37,19 +37,19 @@ session_start();
     </div>
     <form>
         <div class="row form" id="write">
-            <div class="col-sm-3 col-sm-offset-1">
+            <div class="col-sm-4 col-sm-offset-1">
                 Имя <span class="star">&#9733;</span><br>
-                <input type="text" autofocus required pattern="^[A-ZА-ЯЁ][А-Яа-яЁёA-Za-z\s]+$" id="name">
+                <input type="text"  size="5" maxlength="40" autofocus required pattern="^[A-ZА-ЯЁ][А-Яа-яЁёA-Za-z\s]+$" id="name">
             </div>
-            <div class="col-sm-3 col-sm-offset-2">
+            <div class="col-sm-4 col-sm-offset-2">
                 Комментарий <span class="star">&#9733;</span><br>
-                <input type="text" required   pattern="^[A-ZА-ЯЁ][А-Яа-яЁёA-Za-z!\-,.\s&#34;]+$" id="comment">
+                <input type="text" size="15" maxlength="150" required pattern="^[A-ZА-ЯЁ][А-Яа-яЁёA-Za-z!\-,.\s&#34;]+$" id="comment">
             </div>
         </div>
         <div class="row form">
-            <div class="col-sm-3 col-sm-offset-1">
+            <div class="col-sm-4 col-sm-offset-1">
                 E-Mail <span class="star">&#9733;</span><br>
-                <input type="email" required id="email">
+                <input type="email" size="5" maxlength="40" required id="email">
             </div>
         </div>
         <input hidden type="text"  id="session" value ="<?=session_id()?>">
